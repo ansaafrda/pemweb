@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Contoh halaman detail informasi pendaftar untuk tugas HTML dan CSS."
+    />
+    <title>Detail Pendaftar | Ruang Kampus</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Ruang Kampus, beranda">
+        <span class="brand-mark">RK</span>
+        <span>ruang<span class="brand-accent">kampus</span></span>
+      </a>
+      <span class="header-note">Penerimaan Mahasiswa Baru · 2025/2026</span>
+    </header>
+
+    <main class="detail-shell">
+      <div class="detail-topline">
+        <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Kembali ke formulir</a>
+        <span class="application-status"><span class="status-dot"></span> CONTOH DATA</span>
+      </div>
+
+      <section class="detail-hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">02 / RINGKASAN PENDAFTAR</p>
+          <h1 id="page-title">Detail informasi<br />pendaftar.</h1>
+          <p class="intro-copy">
+            Halaman ini berisi data dummy sebagai contoh tampilan detail setelah
+            formulir pendaftaran dikirim.
+          </p>
+        </div>
+        <div class="profile-badge" aria-hidden="true">NA</div>
+      </section>
+
+      <section class="detail-card" aria-labelledby="identity-title">
+        <div class="card-heading">
+          <div>
+            <p class="eyebrow">PROFIL CALON MAHASISWA</p>
+            <h2 id="identity-title">Informasi pribadi</h2>
+          </div>
+          <span class="record-number">NO. PENDAFTARAN <strong>RK-2025-0148</strong></span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <caption class="visually-hidden">Informasi pribadi pendaftar contoh</caption>
+            <tbody>
+              <tr><th scope="row">Nama lengkap</th><td>Nadia Ayu Pratama</td></tr>
+              <tr><th scope="row">Alamat email</th><td>nadia.pratama@example.com</td></tr>
+              <tr><th scope="row">Nomor telepon</th><td>+62 812-3456-7890</td></tr>
+              <tr><th scope="row">Tanggal lahir</th><td>14 Agustus 2007</td></tr>
+              <tr><th scope="row">Kota domisili</th><td>Bandar Lampung</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="detail-grid" aria-label="Informasi pilihan studi">
+        <article class="detail-card compact-card">
+          <p class="eyebrow">PILIHAN STUDI</p>
+          <h2>Program studi</h2>
+          <p class="study-value">Informatika</p>
+          <p class="muted-copy">Fakultas Teknologi Industri</p>
+        </article>
+        <article class="detail-card compact-card">
+          <p class="eyebrow">JALUR PENDAFTARAN</p>
+          <h2>Jenis seleksi</h2>
+          <p class="study-value">Reguler</p>
+          <p class="muted-copy">Seleksi umum tahun akademik 2025/2026</p>
+        </article>
+        <article class="detail-card compact-card interest-card">
+          <p class="eyebrow">MINAT & MOTIVASI</p>
+          <h2>Bidang pilihan</h2>
+          <div class="tag-list">
+            <span class="tag">Teknologi</span>
+            <span class="tag">Riset</span>
+          </div>
+          <p class="muted-copy">“Saya ingin mengembangkan solusi digital yang bermanfaat bagi banyak orang.”</p>
+        </article>
+      </section>
+
+      <aside class="demo-note">
+        <span class="note-icon" aria-hidden="true">i</span>
+        <p><strong>Catatan tugas:</strong> formulir menggunakan metode GET untuk membentuk query string pada URL. Halaman ini sengaja menampilkan data dummy dan tidak membaca maupun menangkap nilai dari URL.</p>
+      </aside>
+
+      <div class="bottom-action">
+        <a class="button button-secondary" href="index.html">Kembali ke halaman pendaftaran <span aria-hidden="true">↗</span></a>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <span>RUANG KAMPUS <span class="footer-separator">/</span> DEMO FORM HTML</span>
+      <span>Dirancang untuk belajar, dibuat dengan HTML & CSS.</span>
+    </footer>
+  </body>
+</html>

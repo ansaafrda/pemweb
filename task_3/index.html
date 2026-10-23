@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Formulir pendaftaran mahasiswa baru — demo tugas HTML dan CSS."
+    />
+    <title>Formulir Pendaftaran | Ruang Kampus</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Ruang Kampus, beranda">
+        <span class="brand-mark">RK</span>
+        <span>ruang<span class="brand-accent">kampus</span></span>
+      </a>
+      <span class="header-note">Penerimaan Mahasiswa Baru · 2025/2026</span>
+    </header>
+
+    <main class="page-shell">
+      <section class="intro-panel" aria-labelledby="page-title">
+        <p class="eyebrow"><span class="status-dot"></span> Pendaftaran dibuka</p>
+        <h1 id="page-title">Mulai langkah<br />besarmu di sini.</h1>
+        <p class="intro-copy">
+          Lengkapi formulir berikut untuk membuat profil pendaftaran. Data pada
+          halaman berikutnya hanya contoh untuk keperluan demonstrasi.
+        </p>
+        <div class="intro-footer">
+          <span class="intro-number">01</span>
+          <span>FORMULIR PENDAFTARAN</span>
+          <span class="intro-line"></span>
+        </div>
+      </section>
+
+      <section class="form-panel" aria-labelledby="form-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">CALON MAHASISWA</p>
+            <h2 id="form-title">Data pendaftaran</h2>
+          </div>
+          <span class="required-note"><span aria-hidden="true">*</span> Wajib diisi</span>
+        </div>
+
+        <form action="detail.html" method="get">
+          <fieldset class="form-section">
+            <legend><span class="step-number">01</span> Informasi pribadi</legend>
+            <div class="form-grid">
+              <div class="field field-full">
+                <label for="nama">Nama lengkap <span>*</span></label>
+                <input
+                  id="nama"
+                  name="nama"
+                  type="text"
+                  placeholder="Sesuai identitas resmi"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="email">Alamat email <span>*</span></label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="nama@email.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="telepon">Nomor telepon</label>
+                <input
+                  id="telepon"
+                  name="telepon"
+                  type="tel"
+                  placeholder="08xxxxxxxxxx"
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="field">
+                <label for="tanggal-lahir">Tanggal lahir</label>
+                <input id="tanggal-lahir" name="tanggal_lahir" type="date" />
+              </div>
+              <div class="field">
+                <label for="domisili">Kota domisili</label>
+                <input id="domisili" name="domisili" type="text" placeholder="Contoh: Bandar Lampung" />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-section">
+            <legend><span class="step-number">02</span> Pilihan studi</legend>
+            <div class="form-grid">
+              <div class="field field-full">
+                <label for="program">Program studi pilihan <span>*</span></label>
+                <select id="program" name="program" required>
+                  <option value="" selected disabled>Pilih program studi</option>
+                  <option value="informatika">Informatika</option>
+                  <option value="arsitektur">Arsitektur</option>
+                  <option value="teknik-sipil">Teknik Sipil</option>
+                  <option value="perencanaan-wilayah">Perencanaan Wilayah dan Kota</option>
+                </select>
+              </div>
+              <div class="field field-full">
+                <span class="field-label">Jalur pendaftaran</span>
+                <div class="choice-row">
+                  <label class="choice-card">
+                    <input type="radio" name="jalur" value="reguler" checked />
+                    <span class="choice-indicator"></span>
+                    <span><strong>Reguler</strong><small>Seleksi umum</small></span>
+                  </label>
+                  <label class="choice-card">
+                    <input type="radio" name="jalur" value="prestasi" />
+                    <span class="choice-indicator"></span>
+                    <span><strong>Prestasi</strong><small>Seleksi nilai/prestasi</small></span>
+                  </label>
+                </div>
+              </div>
+              <div class="field field-full">
+                <span class="field-label">Bidang yang diminati</span>
+                <div class="checkbox-row">
+                  <label class="check-option"><input type="checkbox" name="minat" value="teknologi" /> Teknologi</label>
+                  <label class="check-option"><input type="checkbox" name="minat" value="desain" /> Desain</label>
+                  <label class="check-option"><input type="checkbox" name="minat" value="riset" /> Riset</label>
+                </div>
+              </div>
+              <div class="field field-full">
+                <label for="alasan">Apa yang membuatmu tertarik?</label>
+                <textarea
+                  id="alasan"
+                  name="alasan"
+                  rows="4"
+                  placeholder="Ceritakan secara singkat motivasimu..."
+                ></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <p>Dengan melanjutkan, kamu menyetujui penggunaan data untuk simulasi tugas ini.</p>
+            <button class="button button-primary" type="submit">
+              Lihat detail pendaftaran <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>RUANG KAMPUS <span class="footer-separator">/</span> DEMO FORM HTML</span>
+      <span>Dirancang untuk belajar, dibuat dengan HTML & CSS.</span>
+    </footer>
+  </body>
+</html>
